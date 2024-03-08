@@ -1,0 +1,26 @@
+<html>
+    <h1>Register</h1>
+    <form method="post">
+        {% csrf_token %}
+        <table>
+            <tr>
+                <td>
+                  Enter the area:  
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="area" >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit" name="buttonsubmit">submit</button>
+                </td>
+                <td>
+                    {{result}}
+                </td>
+            </tr>
+        </table>
+    </form>
+</html>
